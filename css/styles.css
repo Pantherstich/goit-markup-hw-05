@@ -207,7 +207,7 @@ body {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  padding: 154px 24px 24px 24px;
+  padding: 72px 24px 24px 24px;
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
   top: 50%;
@@ -292,6 +292,46 @@ body {
 .label-form {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+  padding-top: 8px;
+}
+.label-form input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  height: 40px;
+}
+.input-svg {
+  position: relative;
+  left: 29px;
+}
+.label-form input:hover {
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+  fill: #4d5ae5;
+}
+.input-div {
+  padding-left: 0;
+}
+.label-form span {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.label-form textarea {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+textarea:placeholder-shown {
+  padding: 8px 16px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 /* ПРО */
 .about {
@@ -612,19 +652,20 @@ body {
   padding-left: 16px;
   color: #fff;
 }
-.form-input:placeholder-shown {
+/* .form-input:hover::placeholder-shown {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
-}
+  color: rgba(77, 90, 229, 1);
+} */
 
 .form-input:hover,
 .form-input:focus {
   border: 1px solid #4d5ae5;
+  fill: #4d5ae5;
 }
 
 .subscribe-button {
