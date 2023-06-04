@@ -397,7 +397,7 @@
               />
             </label>
 
-            <button type="button" class="subscribe-button">
+            <button type="submit" class="subscribe-button">
               Subscribe
               <svg class="send-icon" width="24" height="20">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -408,13 +408,37 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal="">
+    <div class="backdrop is-hiddend" data-modal="">
       <div class="modal">
         <button type="button" class="x-button" data-modal-close="">
           <svg width="8" height="8" class="x-svg">
             <use href="./images/icons.svg#icon-x-modal"></use>
           </svg>
         </button>
+
+        <form class="order-form" name="order-form">
+          <label class="label-form"
+            ><span> Name</span>
+            <input type="text" name="name" />
+          </label>
+          <label class="label-form"
+            ><span> Phone</span>
+            <input type="tel" name="contact_tel" />
+          </label>
+          <label class="label-form"
+            ><span> E-mail</span>
+            <input type="mail" name="e-mail" />
+          </label>
+          <label class="label-form"
+            ><span>Comment</span>
+            <textarea
+              name="feedback"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <button type="submit" class="modal-button">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
