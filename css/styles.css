@@ -330,7 +330,6 @@ body {
 }
 .input-input:hover,
 .input-input:focus {
-  /* fill: #4d5ae5; */
   border: 1px solid #4d5ae5;
 }
 .input-input:focus-within + .input-svg {
@@ -366,6 +365,35 @@ textarea:placeholder-shown {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
+.check-div {
+  padding-top: 16px;
+}
+.modal-button {
+  margin-top: 24px;
+  width: 169px;
+  height: 56px;
+}
+.check-svg-square {
+  display: inline-flex;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  fill: none;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check-svg {
+  fill: white;
+}
+.checkbox-pcivacy:checked + .check-div .check-svg-square {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
 /* ПРО */
 .about {
   padding: 120px 0px;
