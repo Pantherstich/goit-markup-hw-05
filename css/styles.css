@@ -372,6 +372,11 @@ textarea:placeholder-shown {
   margin-top: 24px;
   width: 169px;
   height: 56px;
+  rgba(77, 90, 229, 1);
+
+}
+.modal-button:hover, .modal-button:focus {
+  background: rgba(64, 75, 191, 1);
 }
 .check-svg-square {
   display: inline-flex;
