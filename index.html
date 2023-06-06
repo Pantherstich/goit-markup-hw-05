@@ -417,50 +417,42 @@
         </button>
         <p class="form-head">Leave your contacts and we will call you back</p>
         <form class="order-form" name="order-form">
+          <label class="label-form">Name</label>
           <div class="input-div">
-          <label class="label-form"
-            ><span> Name</span>          
-              <input type="text" name="name" />
-              <svg width="18" height="24" class="input-svg">
-                <use href="./images/icons.svg#icon-name"></use>
-              </svg>
-            </div>
-          </label>
+            <input type="text" name="name" class="input-input" />
+            <svg width="18" height="24" class="input-svg">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+          </div>
+
+          <label class="label-form">Phone</label>
           <div class="input-div">
-          <label class="label-form"
-            ><span> Phone</span>
-            <input type="tel" name="contact_tel" />
-              <svg width="18" height="24" class="input-svg">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>              
-            </div>
-          </label>
-           <div class="input-div">
-          <label class="label-form"
-            ><span> E-mail</span>             
-              <input type="mail" name="e-mail" />
-               <svg width="18" height="24" class="input-svg">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-            </div>
-          </label>
-           <div class="input-textarea">
-          <label class="label-form"
-            ><span>Comment</span>
+            <input type="tel" name="contact_tel" class="input-input" />
+            <svg width="18" height="24" class="input-svg">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
+          <label class="label-form">E-mail</label>
+          <div class="input-div">
+            <input type="mail" name="e-mail" class="input-input" />
+            <svg width="18" height="24" class="input-svg">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <label class="label-form">Comment</label>
+          <div class="input-div">
             <textarea
-              name="feedback"
-              rows="5"
+              name="comment"
               placeholder="Text input"
+              class="coment-textarea input-input"
             ></textarea>
-          </label>
-           </div>
-            <div class="input-div">
-          <label class="label-privacy"
-            ><input type="checkbox" name="privacy" class="checkbox-form" />
+          </div>
+          <div>
+            <input type="checkbox" name="privacy" class="checkbox-form" />
             <span class="accept"> the terms and conditions of the</span>
             <a href="" class="link privacy-link"> Privacy Policy</a>
-          </label>
-            </div>
+          </div>
+
           <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
