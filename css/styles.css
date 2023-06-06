@@ -326,6 +326,9 @@ body {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-checkbox-item {
+  margin-bottom: 24px;
+}
 .input-svg {
   position: absolute;
   left: 16px;
@@ -353,8 +356,6 @@ body {
   position: relative;
 }
 .accept {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -376,8 +377,11 @@ textarea:placeholder-shown {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
-.check-div {
-  padding-top: 16px;
+.check-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 .modal-button {
 }
@@ -392,10 +396,12 @@ textarea:placeholder-shown {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  fill: none;
+  fill: transparent;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-svg {
   fill: white;
