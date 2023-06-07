@@ -342,6 +342,7 @@ body {
   fill: #4d5ae5;
 }
 .input-div-textarea {
+  margin-bottom: 16px;
 }
 .input-input:hover,
 .input-input:focus {
